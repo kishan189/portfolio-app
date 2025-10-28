@@ -9,10 +9,15 @@ import { toast } from 'sonner'
 import axios from 'axios'
 import { USER_LOGIN } from '@/utils/data'
 import { useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { setLoading } from '@/redux/authSlice'
 
 const Login = () => {
 
     const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const loading = useSelector((state)=>state?.auth?.loading)
+    console.log("loading>>>",loading)
 
     const [userInput, setUserInput] = useState({
         email: "",
@@ -36,6 +41,7 @@ const Login = () => {
         return
        }
           try{
+            dispatch(setLoading(true))
          const res =  await axios.post(
             USER_LOGIN,
             userInput,
@@ -50,6 +56,7 @@ const Login = () => {
          console.log("res",res)
           if(res.data.success){
             toast.success(res.data.message)
+             dispatch(setLoading(false))
             
             localStorage.setItem("userData",JSON.stringify(res?.data?.user))
             navigate("/")
@@ -57,6 +64,7 @@ const Login = () => {
         }
  
        catch(error){
+         dispatch(setLoading(false))
           console.log("error",error)
            toast.error(res?.response?.data.message)
        }     
@@ -67,7 +75,7 @@ const Login = () => {
         <div>
             <Navbar />
             <div className='flex items-center justify-center max-w-7xl mx-auto'>
-                <form onSubmit={submitHandler} className='w-1/2 border border-gray-300 p-4 my-10 rounded-md'>
+                <form onSubmit={submitHandler} className='flex flex-col gap-2 w-1/2 border border-gray-300 p-4 my-10 rounded-md'>
                     <h1 className='font-bold text-xl mb-5 text-center text-blue-600'>Login</h1>
                     
                     <div className='my-2'>
@@ -94,7 +102,19 @@ const Login = () => {
                     </div>
 
                     
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 cursor-pointer">Login</Button>
+                    <Button className="w-full mt-2 bg-blue-600 hover:bg-blue-700 cursor-pointer">
+                        {
+                            loading ?
+                            (
+                             <span>Loading....</span>
+                            )
+                            :
+                            (
+                            <span>Login</span>
+                            )
+                        }
+                       
+                    </Button>
                     <p className='text-gray-500 text-md py-3'>
                         No account? <Link to="/register" className='text-blue-600'>Register</Link>
                     </p>

@@ -9,12 +9,16 @@ import Login from './components/authentication/Login'
 import Register from './components/authentication/Register'
 import { Home } from './components/component_lite/Home'
 import { ProtectedRoute } from './utils/ProtectedRoute'
+import PrivacyPolicy from './components/component_lite/PrivacyPolicy'
+import TermsOfService from './components/component_lite/TermOfService'
 
 const appRouter = createBrowserRouter([
   {path:"/", element : 
   <ProtectedRoute><Home/></ProtectedRoute>},
   {path:"/login", element : <Login/>},
-  {path:"/register", element : <Register/>}
+  {path:"/register", element : <Register/>},
+   {path:"/privacy", element : <PrivacyPolicy/>},
+   {path:"/terms", element : <TermsOfService/>},
 ])
 function App() {
 

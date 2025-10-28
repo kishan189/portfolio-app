@@ -29,7 +29,8 @@ function Navbar() {
         <div className='bg-white'>
             <div className='flex justify-between items-center mx-auto max-w-7xl h-16'>
                 <div className="text-2xl font-bold">
-                    Job <span className='text-[#022bf8]'>
+                    <span className='text-[#FA4F09]'>Job </span>
+                    <span className='text-[#6A38C2]'>
                         Portal
                     </span>
 

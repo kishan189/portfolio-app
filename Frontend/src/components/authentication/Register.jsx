@@ -8,11 +8,14 @@ import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { USER_REGISTER } from '@/utils/data'
 import { toast } from "sonner"
+import { setLoading } from '@/redux/authSlice'
 
 
 const Register = () => {
 
     const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const loading = useSelector((state)=>state?.auth?.loading)
 
     const [userInput, setUserInput] = useState({
         fullname: "",
@@ -33,6 +36,7 @@ const Register = () => {
        e.preventDefault()
 
        try{
+        dispatch(setLoading(true))
          const res =  await axios.post(
             USER_REGISTER,
             userInput,
@@ -47,6 +51,7 @@ const Register = () => {
          )
         console.group("res",res)
          if(res?.data?.success){
+            dispatch(setLoading(false))
             toast.success(res?.data?.message)
             navigate("/login")
          }
@@ -54,6 +59,7 @@ const Register = () => {
 
        }
        catch(error){
+        dispatch(setLoading(false))
          console.log(error)
           toast.error(res?.response?.data?.message)
        }       
@@ -136,7 +142,18 @@ const Register = () => {
                         </RadioGroup>
 
                     </div>
-                    <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 cursor-pointer">Register</Button>
+                    <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 cursor-pointer">
+                         {
+                            loading ?
+                            (
+                             <span>Loading....</span>
+                            )
+                            :
+                            (
+                            <span>Login</span>
+                            )
+                        }
+                    </Button>
                     <p className='text-gray-500 text-md py-3'>
                         Already have account? <Link to="/login" className='text-blue-600'>Login</Link>
                     </p>
