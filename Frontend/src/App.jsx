@@ -7,18 +7,22 @@ import Navbar from './components/component_lite/Navbar'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './components/authentication/Login'
 import Register from './components/authentication/Register'
-import { Home } from './components/component_lite/Home'
 import { ProtectedRoute } from './utils/ProtectedRoute'
 import PrivacyPolicy from './components/component_lite/PrivacyPolicy'
 import TermsOfService from './components/component_lite/TermOfService'
+import { Home } from './pages/Home'
+import { Jobs } from './pages/Jobs'
+import Browse from './pages/Browse'
 
 const appRouter = createBrowserRouter([
   {path:"/", element : 
   <ProtectedRoute><Home/></ProtectedRoute>},
   {path:"/login", element : <Login/>},
-  {path:"/register", element : <Register/>},
-   {path:"/privacy", element : <PrivacyPolicy/>},
-   {path:"/terms", element : <TermsOfService/>},
+  {path:"/register", element :<Register/>},
+   {path:"/privacy", element :<ProtectedRoute><PrivacyPolicy/></ProtectedRoute> },
+   {path:"/terms", element : <ProtectedRoute><TermsOfService/></ProtectedRoute>},
+   {path:"/jobs", element : <ProtectedRoute><Jobs/></ProtectedRoute>},
+   {path:"/browse", element :<ProtectedRoute><Browse/></ProtectedRoute> },
 ])
 function App() {
 

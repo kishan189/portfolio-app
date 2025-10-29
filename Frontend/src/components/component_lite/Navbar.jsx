@@ -6,11 +6,16 @@ import { PopoverContent, Popover, PopoverTrigger } from '../ui/popover'
 import { Avatar } from '../ui/avatar'
 import { AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
 import { LogOut, User2 } from 'lucide-react'
+import { useDispatch, useSelector } from 'react-redux'
+import { setUserData } from '@/redux/authSlice'
 
 function Navbar() {
 
     const [user, setUser] = useState(null)
+    const userData = useSelector((state)=>state?.auth?.userData)
     const navigate = useNavigate()
+    const dispatch = useDispatch()
+
     useEffect(()=>{
         try{
             const userData = JSON.parse(localStorage.getItem("userData"))
@@ -23,6 +28,7 @@ function Navbar() {
 
     const handleLogout = ()=>{
         localStorage.clear()
+         dispatch(setUserData(null))
         navigate("/login")
     }
     return (
@@ -38,11 +44,11 @@ function Navbar() {
                 <div className="flex item-center justify-between gap-8">
                     <ui className="flex font-medium items-center gap-6 list-none">
                         <Link to={"/"}><li>Home</li></Link>
-                        <li>Browse</li>
-                        <li>Jobs</li>
+                        <Link to="/browse">Browse</Link>
+                        <Link to="/jobs">Jobs</Link >
                     </ui>
                     {
-                        !user ? (
+                        !userData ? (
                             <div className='flex items-center justify-center gap-4'>
                                 <Link to={"/login"}>
                                 <Button variant="outline" className="cursor-pointer">Login</Button>
@@ -71,7 +77,7 @@ function Navbar() {
                                     <PopoverContent className="w-60">
                                         <div className="grid gap-4">
                                             <div className="space-y-2">
-                                                <h4 className="leading-none font-medium">{user?.fullname}</h4>
+                                                <h4 className="leading-none font-medium">{userData?.fullname}</h4>
                                                 <p className="text-muted-foreground text-sm">
                                                     Set the dimensions for the layer.
                                                 </p>

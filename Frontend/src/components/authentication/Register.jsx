@@ -9,6 +9,7 @@ import axios from 'axios'
 import { USER_REGISTER } from '@/utils/data'
 import { toast } from "sonner"
 import { setLoading } from '@/redux/authSlice'
+import { useDispatch, useSelector } from 'react-redux'
 
 
 const Register = () => {

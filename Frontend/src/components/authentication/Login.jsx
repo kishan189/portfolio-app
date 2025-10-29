@@ -10,7 +10,7 @@ import axios from 'axios'
 import { USER_LOGIN } from '@/utils/data'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { setLoading } from '@/redux/authSlice'
+import { setLoading, setUserData } from '@/redux/authSlice'
 
 const Login = () => {
 
@@ -57,7 +57,7 @@ const Login = () => {
           if(res.data.success){
             toast.success(res.data.message)
              dispatch(setLoading(false))
-            
+             dispatch(setUserData(res?.data?.user))
             localStorage.setItem("userData",JSON.stringify(res?.data?.user))
             navigate("/")
          }
