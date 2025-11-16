@@ -29,6 +29,7 @@ function Navbar() {
 
         }
     }, [])
+    console.log("userData????",userData)
 
     const handleLogout = async () => {
         try {
