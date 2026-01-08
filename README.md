@@ -14,7 +14,6 @@ Welcome to my portfolio repository! This project showcases my work, skills, and 
 - 🚀 **Smooth Animations & Transitions**  
 - 🔗 **GitHub Activity & Stats** integrated  
 - ✉️ **Contact Form** for easy communication
-- 🤖 **Shrihari's AI Assistant** - Interactive chatbot for personalized assistance  
 
 ## 🛠️ Tech Stack  
 
@@ -45,9 +44,9 @@ The assistant provides a seamless way for visitors to get instant, accurate info
 
 Here’s the corrected version with the proper links:  
 
-📧 **Email:** [mr.shrihari212@gmail.com](mailto:mr.shrihari212@gmail.com)  
-🔗 **LinkedIn:** [linkedin.com/in/shrihari-jadhav](https://www.linkedin.com/in/shriharijadhav126/)
-💼 **GitHub:** [github.com/shrihari-jadhav](https://github.com/shriharijadhav) 
+📧 **Email:** [mr.aktkishansingh@gmail.com](mailto:mr.aktkishansingh@gmail.com)  
+🔗 **LinkedIn:** [linkedin.com/in/kishan-singh](https://www.linkedin.com/in/kishan-singh-50a963201/)
+💼 **GitHub:** [github.com/kishan-singh](https://github.com/kishan189) 
 
 ---
 
