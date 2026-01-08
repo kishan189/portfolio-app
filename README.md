@@ -3,7 +3,7 @@
 Welcome to my portfolio repository! This project showcases my work, skills, and experience as a **Frontend Developer** specializing in **React.js,  JavaScript, and modern web technologies**.  
 
 ## 🌟 Live Demo  
-🔗 [Visit Portfolio](https://shriharijadhav.vercel.app/)  
+🔗 [Visit Portfolio](https://kishan-portfolio-app.netlify.app/)  
 
 ## 📌 Features  
 
