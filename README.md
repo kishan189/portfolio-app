@@ -1,6 +1,6 @@
-#  Shrihari Jadhav | Portfolio  
+#  Kishan | Portfolio  
 
-Welcome to my portfolio repository! This project showcases my work, skills, and experience as a **Frontend Developer** specializing in **React.js, Next.js, JavaScript, and modern web technologies**.  
+Welcome to my portfolio repository! This project showcases my work, skills, and experience as a **Frontend Developer** specializing in **React.js,  JavaScript, and modern web technologies**.  
 
 ## 🌟 Live Demo  
 🔗 [Visit Portfolio](https://shriharijadhav.vercel.app/)  
@@ -18,24 +18,16 @@ Welcome to my portfolio repository! This project showcases my work, skills, and 
 
 ## 🛠️ Tech Stack  
 
-- **Frontend:** React.js, Next.js, JavaScript
+- **Frontend:** React.js, TypeScript, JavaScript
 - **Styling:** Tailwind CSS, Material UI, Chakra UI 
-- **Animations:** Framer Motion, AOS (Animate On Scroll)  
 - **State Management:** Redux Toolkit  
-- **Deployment:** Vercel / Netlify
-
-## 🤖 Shrihari's AI Assistant
-
-The portfolio features an intelligent AI assistant that provides personalized information about Shrihari's professional background, skills, and experience. Here's what makes it special:
+- **Deployment:**  Netlify
 
 ### ✨ Key Features
-- **Interactive Chat Interface** - Modern floating chatbot with smooth animations
 - **Contextual Responses** - AI understands conversation history for better interactions
 - **Markdown Support** - Rich text formatting with tables, code blocks, and styling
 - **Mobile Responsive** - Optimized for all device sizes
 - **Real-time Communication** - Fast API integration with error handling
-- **Professional Context** - Trained on Shrihari's complete professional profile
-
 
 ### 🎯 Capabilities
 The AI assistant can answer questions about:
@@ -60,5 +52,5 @@ Here’s the corrected version with the proper links:
 ---
 
 
-⚡ **Built with ❤️ by Shrihari Jadhav**  
+⚡ **Built with ❤️ by Kishan Singh**  
 
