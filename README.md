@@ -51,4 +51,6 @@ Here’s the corrected version with the proper links:
 
 ---
 
-⚡ **Built with ❤️ by Kishan Singh**  
+
+⚡ **Built with ❤️ by Shrihari Jadhav**  
+
