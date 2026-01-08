@@ -80,7 +80,8 @@ const ContactMe = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    emailjs.send('service_ukpkro9', 'template_c63at3r', formData, 'KeM66rbZCD_kb2YQ7')
+    // sercie id , template id, public key
+    emailjs.send('service_ukpkro9', 'template_c63at3r', formData, 'iEnyFgZJrulU_-IHz')
       .then((response) => {
         // console.log('SUCCESS!', response.status, response.text);
         setIsLoading(false);
