@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Text, Stack, Badge, Flex, Image, Button } from '@chakra-ui/react';
 import VerticalLineWithText from './VerticalLineWithText';
-import myImage from '../../images/myImageNew.jpg'
+import myImage from '../../images/profile-pic.png'
 import { Link as ScrollLink } from 'react-scroll';
 const About = () => {
     const [isShow,setIsShow] = useState(false);
@@ -19,14 +19,12 @@ const About = () => {
   <Flex w="90%" direction="column" justifyContent="center" alignItems="center" gap="20px">
     <Text fontSize="4xl" fontWeight="bold" mb="4" data-aos="zoom-in">About Me</Text>
     <Flex w={'100%'} p={'10px 0px'} direction={['column','column','row','row']} pb={'20px'}   alignItems={'center'} data-aos="fade-up-right">
-        {/* <Image p={'10px 20px'} borderRadius={"full"}  id='home-img'  w={'280px'} src={myImage} /> */}
+        <Image p={'10px 20px'} borderRadius={"full"}  id='home-img'  w={'280px'} src={myImage} />
         <Flex direction={'column'} w={['100%','100%','100%','35%']} p={'10px 5px'} >
             <Text id='user-detail-name' borderLeft={["5px solid gray","5px solid gray","none","none"]} fontSize={['2xl','3xl','4xl','4xl']} fontWeight={'700'} pl="10px" pb={'10px'}>
             Kishan Singh
             </Text>
-            <Text fontSize={'larger'} fontWeight={'700'} pl="10px" pb={'5px'}>
-            You can call me Kishan ! 
-            </Text>
+            
             <Text fontWeight={'500'} pl="10px">
             Creating digital experiences so fluid, they feel like magic. <Text as={'span'}>🧙‍♂️💻😉</Text>
             </Text>
