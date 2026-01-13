@@ -38,7 +38,7 @@ The AI assistant can answer questions about:
 - General inquiries about services and expertise
 
 
-The assistant provides a seamless way for visitors to get instant, accurate information about Shrihari's professional background while maintaining an engaging user experience.  
+The assistant provides a seamless way for visitors to get instant, accurate information about Kishan's professional background while maintaining an engaging user experience.  
 
 ## 🤝 Connect With Me  
 

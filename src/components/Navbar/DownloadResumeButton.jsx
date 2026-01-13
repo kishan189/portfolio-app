@@ -10,13 +10,13 @@ const DownloadResumeButton = () => {
 
   const handleDownload = () => {
     const viewLink = document.createElement('a');
-    viewLink.href = 'https://drive.google.com/file/d/1Bzr-nvW-OYErlkwCN4P5eeki2NP1tL_j/view?usp=sharing'; // View link
+    viewLink.href = 'https://drive.google.com/file/d/1fcUTf3TCmcVrubOcTxBzetBR7r5LdnXB/view?usp=sharing'; // View link
     viewLink.target = '_blank';
     viewLink.click();
 
     const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1Bzr-nvW-OYErlkwCN4P5eeki2NP1tL_j'; // Direct download link
-    downloadLink.download = 'Shrihari_Jadhav_resume.pdf';
+    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1fcUTf3TCmcVrubOcTxBzetBR7r5LdnXB'; // Direct download link
+    downloadLink.download = 'KISHAN-SINGH-Resume-20260113.pdf';
     downloadLink.click();
   };
 

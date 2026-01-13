@@ -57,7 +57,7 @@ const Navbar = () => {
                     <DrawerContent>
                     <DrawerHeader borderBottomWidth='1px'>
                         <Flex justifyContent={'space-between'}>
-                            <Text _hover={{ cursor: 'pointer' }}>Shrihari's Portfolio</Text>
+                            <Text _hover={{ cursor: 'pointer' }}>Kishan's Portfolio</Text>
                             <IconButton 
                             aria-label="Close"
                             variant={'ghost'}
