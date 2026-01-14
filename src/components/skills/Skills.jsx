@@ -120,14 +120,14 @@ const Skills = () => {
             width:'20px',
             colorScheme: 'yellow'
         },
-        {
-            id:16,
-            title:'MySQL',
-            category:'database',
-            src:mysql,
-            width:'25px',
-            colorScheme: 'yellow'
-        },
+        // {
+        //     id:16,
+        //     title:'MySQL',
+        //     category:'database',
+        //     src:mysql,
+        //     width:'25px',
+        //     colorScheme: 'yellow'
+        // },
         
 
         {
