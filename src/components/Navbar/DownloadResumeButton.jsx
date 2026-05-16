@@ -10,13 +10,13 @@ const DownloadResumeButton = () => {
 
   const handleDownload = () => {
     const viewLink = document.createElement('a');
-    viewLink.href = 'https://drive.google.com/file/d/1fcUTf3TCmcVrubOcTxBzetBR7r5LdnXB/view?usp=sharing'; // View link
+    viewLink.href = 'https://drive.google.com/file/d/11aIgsCzH8vMTjkWbG2lepa9hxP1myN_S/view?usp=sharing'; // View link
     viewLink.target = '_blank';
     viewLink.click();
 
     const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1fcUTf3TCmcVrubOcTxBzetBR7r5LdnXB'; // Direct download link
-    downloadLink.download = 'KISHAN-SINGH-Resume-20260113.pdf';
+    downloadLink.href = 'https://drive.google.com/uc?export=download&id=11aIgsCzH8vMTjkWbG2lepa9hxP1myN_S'; // Direct download link
+    downloadLink.download = 'KISHAN-SINGH-Resume-20260515.pdf';
     downloadLink.click();
   };
 

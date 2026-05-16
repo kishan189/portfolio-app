@@ -3,6 +3,7 @@ import { Box, Text, Stack, Badge, Flex, Image, Button } from '@chakra-ui/react';
 import VerticalLineWithText from './VerticalLineWithText';
 import myImage from '../../images/profile-pic.png'
 import { Link as ScrollLink } from 'react-scroll';
+import DownloadResumeButton from '../Navbar/DownloadResumeButton';
 const About = () => {
     const [isShow,setIsShow] = useState(false);
   return (
@@ -80,9 +81,9 @@ const About = () => {
 
         <Text fontSize="large">
           Currently expanding my skills in  
-          <Badge fontSize="medium" colorScheme="teal" wordBreak="break-word">Next.js</Badge>,  
+          <Badge fontSize="medium" colorScheme="teal" wordBreak="break-word">Next.js</Badge> 
           {/* <Badge fontSize="medium" colorScheme="teal" wordBreak="break-word">MySQL</Badge>, and   */}
-          <Badge fontSize="medium" colorScheme="teal" wordBreak="break-word">serverless technologies</Badge>.
+          {/* <Badge fontSize="medium" colorScheme="teal" wordBreak="break-word">serverless technologies</Badge>. */}
         </Text>
       </Flex>
     )
@@ -95,6 +96,9 @@ const About = () => {
 
 <Button   w={"max-content"} bgColor={"yellow.400"} onClick={()=>{setIsShow(!isShow)}} maxW={'max-content'} borderColor="yellow.400" color="black" _hover={{ bg: "yellow.400", color: "black" }}>
     {isShow ? 'Read less' : 'Read more'}
+  </Button>
+  <Button   w={"max-content"} bgColor={"yellow.400"}  maxW={'max-content'} borderColor="yellow.400" color="black" _hover={{ bg: "yellow.400", color: "black" }}>
+     <DownloadResumeButton />
   </Button>
 </Stack>
 

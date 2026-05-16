@@ -163,6 +163,22 @@ const Skills = () => {
             width:'25px',
             colorScheme: 'yellow'
         },
+         {
+            id:24,
+            title:'Adaptability',
+            category:'softSkills',
+            src:github,
+            width:'25px',
+            colorScheme: 'yellow'
+        },
+        {
+            id:25,
+            title:'Quick Learner',
+            category:'softSkills',
+            src:github,
+            width:'25px',
+            colorScheme: 'yellow'
+        },
         
         
 
@@ -265,6 +281,22 @@ const Skills = () => {
                         if(item.category === 'version'){
                             return (
                                 <SingleSkill key={item.id} item={item}/>
+                            )
+                        }
+                    }
+                    )
+                }
+            </Flex>
+            </Flex>
+             <Flex justifyContent={'center'} alignItems={'center'} direction={'column'} w={'100%'} gap={'20px'} mt={'10px'}   p={'10px 0px'} data-aos="slide-left">
+            <Text fontSize={['x-large','x-large','x-large','x-large']}>Soft Skills</Text> 
+            <Flex w={'100%'} gap={'20px'} justifyContent={'center'} alignItems={'center'}  flexWrap={'wrap'} >
+                {
+                    allSkills.map(item=>{
+                        if(item.category === 'softSkills'){
+                            return (
+                                // <SingleSkill key={item.id} item={item}/>
+                                <span key={item.id} style={{fontWeight:"bold"}}>{item?.title}</span>
                             )
                         }
                     }

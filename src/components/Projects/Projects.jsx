@@ -21,6 +21,14 @@ const projects = [
     demoLink: 'https://saas-analytics-dash.netlify.app/',
     repoLink: 'https://github.com/kishan189/saas-analytics-dashboard'
   },
+  {
+    id: 31,
+    title: 'Job Portal',
+    image: saasImageApp,
+    description: 'Built a full-stack job portal with a modern React UI using Redux Toolkit for state management and Tailwind CSS for responsive design.',
+    demoLink: 'https://jobportal-test.netlify.app/',
+    repoLink: 'https://github.com/kishan189/JobPortal'
+  },
 
   {
     id: 1,

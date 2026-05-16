@@ -25,7 +25,7 @@ const Navbar = () => {
         { id: 3, linkName: 'Projects', linkId: 'projects' ,className:'nav-link project'},
         { id: 4, linkName: 'Experience', linkId: 'experience',className:'nav-link experience' },
         { id: 5, linkName: 'Skills', linkId: 'skills',className:'nav-link skills'},
-        { id: 6, linkName: 'Statistics', linkId: 'statistics',className:'nav-link stats' },
+        // { id: 6, linkName: 'Statistics', linkId: 'statistics',className:'nav-link stats' },
         { id: 7, linkName: 'Contact', linkId: 'contact',className:'nav-link contact' }
     ];
     

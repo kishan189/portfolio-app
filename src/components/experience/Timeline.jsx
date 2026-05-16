@@ -6,7 +6,7 @@ const experiences = [
   {
     role: "Frontend Developer",
     company: `**Pepsales AI** *(Bangalore)*`,
-    duration: "Jan 2025 - Present",
+    duration: "Jan 2025 - Feb 2026",
     description: `
 - Implemented **Role-based access controls** for enhanced security.  
 - Created a **Notification system**  with Pusher (socket).  
