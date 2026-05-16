@@ -10,6 +10,7 @@ import groupon from '../../images/groupon.png'
 import pharmeasy from '../../images/pharmeasy.png'
   import saasImageApp from '../../images/saasImage.png'
   import algoViewImageApp from '../../images/algoImage.png'
+import jobPortalPic from '../../images/jobPortalPic.png'
 
 
 const projects = [
@@ -24,7 +25,7 @@ const projects = [
   {
     id: 31,
     title: 'Job Portal',
-    image: saasImageApp,
+    image: jobPortalPic,
     description: 'Built a full-stack job portal with a modern React UI using Redux Toolkit for state management and Tailwind CSS for responsive design.',
     demoLink: 'https://jobportal-test.netlify.app/',
     repoLink: 'https://github.com/kishan189/JobPortal'
