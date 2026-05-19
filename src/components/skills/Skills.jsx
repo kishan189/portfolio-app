@@ -191,6 +191,28 @@ const Skills = () => {
     <Flex w={'100%'} justifyContent={'center'} alignItems={'center'} p={'20px 0px'}>
         <Flex w={'80%'} direction={'column'} justifyContent={'center'} alignItems={'center'}>
         <Text fontSize={["3xl","3xl","4xl","4xl"]} fontWeight="bold" mb="4" data-aos="zoom-in">Skills</Text>
+            <Flex justifyContent={'center'} alignItems={'center'} direction={'column'} w={'100%'} gap={'20px'} mt={'10px'}   p={'10px 0px'} data-aos="slide-left">
+            <Text fontSize={['x-large','x-large','x-large','x-large']} fontWeight={'bold'}>Soft Skills</Text> 
+            <Flex w={'100%'} gap={'20px'} justifyContent={'center'} alignItems={'center'}  flexWrap={'wrap'} >
+                {
+                    allSkills.map(item=>{
+                        if(item.category === 'softSkills'){
+                            return (
+                                // <SingleSkill key={item.id} item={item}/>
+                                <span key={item.id} 
+                                style={{fontWeight:"bold", border:"1px solid black",
+                                     padding:"4px 8px", borderRadius:"4px", backgroundColor:"rgba(107, 114, 128, 0.5)"}}
+                                >{item?.title}</span>
+                            )
+                        }
+                    }
+                    )
+                }
+            </Flex>
+            </Flex>
+             <Flex justifyContent={'center'} alignItems={'center'} direction={'column'} w={'100%'} gap={'20px'} mt={'10px'}   p={'10px 0px'} data-aos="slide-left">
+            <Text fontSize={['x-large','x-large','x-large','x-large']} fontWeight={'bold'}>Tech Skills</Text> 
+            </Flex>
         
 
             <Flex justifyContent={'center'} alignItems={'center'} direction={'column'} w={'100%'} gap={'20px'} p={'20px 0px'} data-aos="slide-right">
@@ -289,7 +311,7 @@ const Skills = () => {
             </Flex>
             </Flex>
              <Flex justifyContent={'center'} alignItems={'center'} direction={'column'} w={'100%'} gap={'20px'} mt={'10px'}   p={'10px 0px'} data-aos="slide-left">
-            <Text fontSize={['x-large','x-large','x-large','x-large']}>Soft Skills</Text> 
+            {/* <Text fontSize={['x-large','x-large','x-large','x-large']} fontWeight={'bold'}>Soft Skills</Text> 
             <Flex w={'100%'} gap={'20px'} justifyContent={'center'} alignItems={'center'}  flexWrap={'wrap'} >
                 {
                     allSkills.map(item=>{
@@ -302,7 +324,7 @@ const Skills = () => {
                     }
                     )
                 }
-            </Flex>
+            </Flex> */}
             </Flex>
 
         </Flex>

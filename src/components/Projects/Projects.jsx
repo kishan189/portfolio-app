@@ -11,7 +11,7 @@ import pharmeasy from '../../images/pharmeasy.png'
   import saasImageApp from '../../images/saasImage.png'
   import algoViewImageApp from '../../images/algoImage.png'
 import jobPortalPic from '../../images/jobPortalPic.png'
-
+import careSyncPic from '../../images/careSync.png'
 
 const projects = [
   {
@@ -23,7 +23,7 @@ const projects = [
     repoLink: 'https://github.com/kishan189/saas-analytics-dashboard'
   },
   {
-    id: 31,
+    id: 30,
     title: 'Job Portal',
     image: jobPortalPic,
     description: 'Built a full-stack job portal with a modern React UI using Redux Toolkit for state management and Tailwind CSS for responsive design.',
@@ -39,7 +39,14 @@ const projects = [
     demoLink: 'https://algoviewcw.netlify.app/',
     repoLink: 'https://github.com/NajimuddinS/NeuralNetNavigators'
   },
- 
+   {
+    id: 32,
+    title: 'CareSync',
+    image: careSyncPic,
+    description: 'The CareSync platform is a holistic and personalized solution that integrates fitness tracking, nutrition management, mental wellness tools, and tailored health recommendations.',
+    demoLink: 'https://quantumleapcaresync35.netlify.app/',
+    repoLink: 'https://github.com/kishan189/QuantumLeap_018'
+  },
    
   // Add more projects as needed
 ];
